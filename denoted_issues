@@ -1,0 +1,3 @@
+1. issues with any >2 length not counting down the attempts
+2. a correct guess does not reset the count to 3
+3. a secret of length 2 or less gets autoset to 2 distance regardless of guess length
