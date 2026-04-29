@@ -14,11 +14,6 @@ class GuesserTest : public ::testing::Test
 		virtual void TearDown(){} //clean up after each test, (before destructor)
 };
 
-// Example "smoke test" (can be deleted)
-TEST(GuesserTest, smoke_test)
-{
-  Guesser object("Secret");
-}
 
 /*check if the secret will take a distance of 3*/
 TEST(GuesserTest, stest)
@@ -48,7 +43,7 @@ TEST(GuesserTest, lxtest)
 {
   Guesser object("Secret"); /* to invoke distance, call object.distance*/
   ASSERT_EQ(3, distance(guess)); /*try with a distance greater than 2; i.e.,3 */
-  cout << "remaining_tries: " << m_remaining << endl;
+  cout << "remaining_tries: " << m_remaining << "problem with bool Guesser::match(string guess)" <<  endl;
 }
  
 
@@ -57,7 +52,7 @@ TEST(GuesserTest, tstest)
 {
   Guesser object("Secret");
   ASSERT_EQ(3, distance(guess)); /*try with a distance greater than 2; i.e.,3 */
-  cout << "remaining_tries: " << m_remaining << endl;
+  cout << "remaining_tries: " << m_remaining << "problem with bool Guesser::match(string guess)" <<  endl;
 }
 
 /*check if a "correct" guess resets the number of remaining attempts*/
@@ -65,7 +60,7 @@ TEST(GuesserTest, ptest)
 {
   Guesser object("Secret");
   ASSERT_EQ(0, distance(guess)); /*try with a distance greater than 2; i.e.,3 */
-  cout << "remaining_tries: " << m_remaining << endl;
+  cout << "remaining_tries: " << m_remaining << "problem with bool Guesser::match(string guess)" <<  endl;
 }
 
 
